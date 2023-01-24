@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --purple:#ef4b4c;
+   --red:#c0392b;
+   --orange:#f39c12;
+   --black:#213159;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Roboto', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+
+*::selection{
+   background-color: var(--purple);
+   color:var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--purple);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   background: url('../images/bck.jpg');
+   background-size: 100%;
+}
+
+
+
+
+
+
+
+
+.dashboard{
+    margin-top: 4%;
+}
+
+.dashboard h1{
+    text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color: #ef4b4c;
+   font-size: 4rem;
+   background-color: #fff;
+}
+
+.dashboard .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+    max-width: 1200px;
+    margin:0 auto;
+    align-items: flex-start;
+ }
+ 
+ .dashboard .box-container .box{
+    border-radius: 20px;
+    padding:2rem;
+    background-color: #20325a;
+    box-shadow: 1px 2px 2px #000;
+    border: 1px solid #fff;
+    text-align: center;
+ }
+ 
+ .dashboard .box-container .box h3{
+    font-size: 5rem;
+    color: #fff; 
+ }
+ 
+ .dashboard .box-container .box p{
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    color: #ef4b4c;
+    font-size: 2rem;
+    background-color: #fff;
+    width: 100%;
+ }
